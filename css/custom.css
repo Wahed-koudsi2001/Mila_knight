@@ -358,7 +358,7 @@ body {
 
 .section-title h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.2em;
     color: #000;
     margin-bottom: 0;
@@ -864,7 +864,6 @@ body:has(.offcanvas) {
 
 .hero.bg-image {
     position: relative;
-    background: url("../images/hero-bg.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
 }
@@ -895,7 +894,6 @@ body:has(.offcanvas) {
 
 .hero.hero-slider-layout .hero-slide {
     position: relative;
-    background: url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1396,7 +1394,7 @@ body:has(.offcanvas) {
     content: "";
     display: block;
     position: absolute;
-    right: -90px;
+    left: -90px;
     top: 50%;
     background: url(../images/why-choose-bg-shape.png) no-repeat;
     background-position: left center;
@@ -2100,7 +2098,7 @@ body:has(.offcanvas) {
     content: "";
     display: block;
     position: absolute;
-    left: -70px;
+    right: -70px;
     top: 50%;
     background: url(../images/testimonial-bg-shape.png) no-repeat;
     background-position: left center;
