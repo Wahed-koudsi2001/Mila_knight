@@ -356,36 +356,36 @@
         })
     });
 
-    $(document).ready(function () {
-        // Disable Ctrl+U
-        $(document).on("keydown", function (event) {
-            if (event.ctrlKey && event.key.toLowerCase() === "u") {
-                event.preventDefault();
-                alert("View Source is disabled!");
-            }
-            // Disable Ctrl+Shift+I (Developer Tools)
-            if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "i") {
-                event.preventDefault();
-                alert("Developer Tools are disabled!");
-            }
-            // Disable Ctrl+Shift+C (Inspect Element)
-            if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "c") {
-                event.preventDefault();
-                alert("Inspect Element is disabled!");
-            }
-            // Disable F12 (Developer Tools)
-            if (event.key === "F12") {
-                event.preventDefault();
-                alert("Developer Tools are disabled!");
-            }
-        });
+    // $(document).ready(function () {
+    //     // Disable Ctrl+U
+    //     $(document).on("keydown", function (event) {
+    //         if (event.ctrlKey && event.key.toLowerCase() === "u") {
+    //             event.preventDefault();
+    //             alert("View Source is disabled!");
+    //         }
+    //         // Disable Ctrl+Shift+I (Developer Tools)
+    //         if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "i") {
+    //             event.preventDefault();
+    //             alert("Developer Tools are disabled!");
+    //         }
+    //         // Disable Ctrl+Shift+C (Inspect Element)
+    //         if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "c") {
+    //             event.preventDefault();
+    //             alert("Inspect Element is disabled!");
+    //         }
+    //         // Disable F12 (Developer Tools)
+    //         if (event.key === "F12") {
+    //             event.preventDefault();
+    //             alert("Developer Tools are disabled!");
+    //         }
+    //     });
 
-        // Disable right-click
-        $(document).on("contextmenu", function (event) {
-            event.preventDefault();
-            alert("Right-click is disabled!");
-        });
-    });
+    //     // Disable right-click
+    //     $(document).on("contextmenu", function (event) {
+    //         event.preventDefault();
+    //         alert("Right-click is disabled!");
+    //     });
+    // });
 
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -397,4 +397,29 @@
         });
     });
 
+    // Select all 'getQuote' links and the popup
+    const getQuoteLinks = document.querySelectorAll('.getQuote'); // Trigger links
+    const orderPopup = document.querySelector('.order-popup'); // The popup container
+    const contactForm = document.querySelector('.contact-us-form'); // The form itself
+    const overlay = document.querySelector('.overlay'); // The overlay
+
+    // Function to open the popup
+    getQuoteLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            orderPopup.style.display = 'block'; // Show the popup
+            overlay.style.display = 'block'; // Show the overlay
+        });
+    });
+
+    // Close the overlay when it's clicked
+    overlay.addEventListener('click', function () {
+        orderPopup.style.display = 'none'; // Hide the popup
+        overlay.style.display = 'none'; // Hide the overlay
+    });
+
+    // Prevent the popup from closing when clicking inside the form
+    contactForm.addEventListener('click', function (event) {
+        event.stopPropagation(); // Stop the event from bubbling up
+    });
 })(jQuery);
