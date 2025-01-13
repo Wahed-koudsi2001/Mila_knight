@@ -382,6 +382,7 @@ body {
 
 .section-title-content p {
     margin: 0;
+    color: #000;
 }
 
 .help-block.with-errors ul {
@@ -1202,29 +1203,35 @@ body:has(.offcanvas) {
     padding: 80px 0;
 }
 
-.service-item {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: relative;
-    background: #fff;
-    background-position: top left;
-    background-size: auto;
-    border: 1px solid var(--divider-color);
-    border-radius: 30px;
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
-    height: calc(100% - 30px);
-    margin-bottom: 30px;
-    padding: 40px;
-    transition: all 0.4s ease-in-out;
-    overflow: hidden;
+.services-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
-
-.service-item:hover {
-    transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
+.services-row-2 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.service-item {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    height: 120px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .service-item-header {
@@ -1232,35 +1239,20 @@ body:has(.offcanvas) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+}
+
+.service-item-body h3 {
+    font-size: 16px;
+    text-transform: capitalize;
 }
 
 .service-item-header .icon-box img {
     max-width: 60px;
+    margin-bottom: 10px;
 }
-
-.service-arrow img {
-    max-width: 34px;
-    transition: all 0.3s ease-in-out;
-}
-
-.service-item:hover .service-arrow img {
-    transform: rotate(45deg);
-}
-
-.service-item-body {
-    position: relative;
-}
-
 .service-item-body h3 {
-    font-size: 22px;
+    font-size: 16px;
     text-transform: capitalize;
-    margin-bottom: 20px;
-}
-
-.service-item-body p {
-    margin-bottom: 0;
-    color: #000;
 }
 
 .service-footer {
@@ -1279,10 +1271,6 @@ body:has(.offcanvas) {
     text-decoration: underline;
     color: var(--accent-color);
     transition: all 0.3s ease-in-out;
-}
-
-.service-footer p a:hover {
-    color: var(--primary-color);
 }
 
 /************************************/
@@ -2119,7 +2107,7 @@ body:has(.offcanvas) {
     width: 100%;
     border: 1px solid var(--accent-color);
     border-radius: 30px;
-    background-color: #fff;
+    background-color: transparent;
     text-align: center;
     overflow: hidden;
     padding: 50px;
@@ -3566,7 +3554,7 @@ body:has(.offcanvas) {
 }
 
 .our-faq-section .accordion-item {
-    border: 1px solid var(--divider-color);
+    border: 1px solid var(--accent-color);
     border-radius: 10px;
     margin-bottom: 30px;
     padding: 0;
@@ -5619,6 +5607,16 @@ body:has(.offcanvas) {
         margin-top: 15px;
     }
 
+    .services-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .services-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-item-header .icon-box img {
+        max-width: 50px;
+    }
     .hero {
         padding: 180px 0 90px;
         min-height: auto;
@@ -5691,20 +5689,11 @@ body:has(.offcanvas) {
         padding: 40px 0;
     }
 
-    .service-item {
-        padding: 30px;
-    }
-
-    .service-item-header {
-        margin-bottom: 50px;
-    }
-
     .service-item-header .icon-box img {
         max-width: 50px;
     }
 
     .service-item-body h3 {
-        font-size: 20px;
         margin-bottom: 15px;
     }
 
@@ -5866,10 +5855,6 @@ body:has(.offcanvas) {
 
     .digital-features-item.features-item-2 {
         width: calc(45% - 15px);
-    }
-
-    .digital-features-item {
-        padding: 30px;
     }
 
     .digital-features-content h3 {
@@ -7925,6 +7910,7 @@ html {
     width: 210px;
     margin: auto;
 }
+
 @media (max-width: 768px) {
     .whatsapp {
         border-radius: 50%;
@@ -7950,5 +7936,14 @@ html {
     }
     .our-testimonial::before {
         display: none;
+    }
+    .services-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .service-item {
+        padding: 10px;
+    }
+    .service-item-body h3 {
+        font-size: 14px;
     }
 }
