@@ -43,11 +43,12 @@
     right: -60px;
     left: initial;
 }
-.about-agency-list {
+/* .about-agency-list {
     padding-right: 50px;
     border-right: 1px solid #bf5ec6;
     border-left: none;
-}
+} */
+ 
 .testimonial-btn {
     right: initial;
     left: 0;

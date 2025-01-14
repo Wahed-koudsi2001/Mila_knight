@@ -358,7 +358,7 @@ body {
 
 .section-title h2 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2em;
     color: #000;
     margin-bottom: 0;
@@ -1116,7 +1116,7 @@ body:has(.offcanvas) {
 
 .about-agency {
     position: relative;
-    padding: 160px 0 80px;
+    padding: 100px 0 80px;
 }
 
 .about-agency::before {
@@ -1144,22 +1144,28 @@ body:has(.offcanvas) {
     }
 }
 
-.about-agency-content {
+/* .about-agency-content {
     position: sticky;
     top: 100px;
     padding-right: 35px;
-}
+} */
 
 .about-agency-list {
-    border-left: 1px solid var(--accent-color);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px 30px;
-    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .about-agency-item {
+    background-color: #fff;
     width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
 }
 
 .about-agency-item .icon-box {
@@ -1175,18 +1181,6 @@ body:has(.offcanvas) {
     font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 10px;
-}
-
-.agency-item-content h3:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -60px;
-    background: url("../images/dot-green-icon.svg") no-repeat;
-    background-position: left center;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
 }
 
 .agency-item-content p:last-child {
@@ -2155,16 +2149,14 @@ body:has(.offcanvas) {
     overflow: hidden;
 }
 
-.satisfy-client-image:first-child {
-    margin: 0;
-}
-
 .satisfy-client-image figure {
     display: block;
 }
 
 .satisfy-client-image img {
     max-width: 40px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .testimonial-slider {
@@ -2727,7 +2719,6 @@ body:has(.offcanvas) {
 
 .footer-contact-content p {
     font-size: 22px;
-    font-weight: 600;
     margin: 0;
 }
 
@@ -5605,10 +5596,6 @@ body:has(.offcanvas) {
         font-size: 70px;
     }
 
-    .section-title h2 {
-        font-size: 40px;
-    }
-
     .section-title p {
         margin-top: 15px;
     }
@@ -5685,11 +5672,11 @@ body:has(.offcanvas) {
         margin-bottom: 30px;
     }
 
-    .about-agency-list {
+    /* .about-agency-list {
         gap: 30px;
         padding-left: 30px;
         margin-left: 10px;
-    }
+    } */
 
     .agency-item-content h3:after {
         left: -40px;
@@ -6861,9 +6848,9 @@ body:has(.offcanvas) {
         height: 280px;
     }
 
-    .about-agency-list {
+    /* .about-agency-list {
         padding-left: 20px;
-    }
+    } */
 
     .agency-item-content h3:after {
         left: -30px;
