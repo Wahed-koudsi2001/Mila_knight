@@ -48,7 +48,7 @@
     border-right: 1px solid #bf5ec6;
     border-left: none;
 } */
- 
+
 .testimonial-btn {
     right: initial;
     left: 0;
@@ -253,4 +253,15 @@
 .page-blog::before {
     right: initial;
     left: -120px;
+}
+.main-menu ul li.submenu > a:after {
+    margin-left: initial;
+    margin-right: 8px;
+}
+.slicknav_arrow:after {
+    margin-left: initial;
+    margin-right: 8px;
+}
+.main-menu ul ul {
+    text-align: right;
 }

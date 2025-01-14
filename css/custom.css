@@ -1160,6 +1160,7 @@ body:has(.offcanvas) {
     background-color: #fff;
     width: 100%;
     border-radius: 20px;
+    border: 1px solid var(--accent-color);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -2924,14 +2925,13 @@ body:has(.offcanvas) {
 
 .mission-vision-item {
     position: relative;
-    border: 1px solid var(--divider-color);
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
+    border: 1px solid var(--accent-color);
     border-radius: 30px;
     height: calc(100% - 30px);
     margin-bottom: 30px;
     padding: 40px;
     overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .mission-vision-item::before {
@@ -3143,21 +3143,18 @@ body:has(.offcanvas) {
 .company-client-images .client-image {
     display: inline-block;
     margin-left: -18px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--accent-color);
     border-radius: 50%;
     overflow: hidden;
 }
-
-.company-client-images .client-image:first-child {
-    margin: 0;
-}
-
 .company-client-images .client-image figure {
     display: block;
 }
 
 .company-client-images .client-image img {
     max-width: 40px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
 
 .contact-now-btn a {
@@ -3188,7 +3185,6 @@ body:has(.offcanvas) {
 }
 
 .contact-now-btn a:hover:after {
-    filter: brightness(0) invert(1);
     transform: rotate(45deg);
 }
 
@@ -3217,24 +3213,10 @@ body:has(.offcanvas) {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    border: 1px solid var(--divider-color);
-    backdrop-filter: blur(100px);
-    -webkit-backdrop-filter: blur(100px);
+    border: 1px solid var(--accent-color);
     border-radius: 30px;
     padding: 30px;
     overflow: hidden;
-}
-
-.experts-counter-item:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #fff;
-    opacity: 1;
-    z-index: -1;
 }
 
 .experts-counter-box.expert-box-1 .experts-counter-item:nth-child(even) {
