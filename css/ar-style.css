@@ -265,3 +265,6 @@
 .main-menu ul ul {
     text-align: right;
 }
+.slicknav_arrow:after {
+    right: 80px;
+}

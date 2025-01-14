@@ -487,18 +487,14 @@ header.main-header .header-sticky.active {
     padding: 0;
     margin: 0;
     list-style: none;
-    width: 230px;
+    width: 280px;
     border-radius: 20px;
     position: absolute;
-    left: 0;
+    left: -40px;
     top: 100%;
     background: var(--accent-color);
     text-align: left;
     transition: all 0.3s ease-in-out;
-}
-
-.main-menu ul li.submenu:first-child ul {
-    width: 230px;
 }
 
 .main-menu ul ul ul {
@@ -510,7 +506,7 @@ header.main-header .header-sticky.active {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .main-menu ul li.submenu ul li.submenu > a:after {
@@ -533,7 +529,7 @@ header.main-header .header-sticky.active {
     visibility: visible;
     opacity: 1;
     transform: scaleY(1);
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 .main-menu ul ul li a:hover,
@@ -1406,7 +1402,7 @@ body:has(.offcanvas) {
 .why-choose-item {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
-    border: 1px solid #000;
+    border: 1px solid var(--accent-color);
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
@@ -7955,5 +7951,11 @@ html {
     }
     .order-popup .contact-us-form {
         width: 90%;
+    }
+    .about-agency-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services-row {
+        gap: 15px;
     }
 }
