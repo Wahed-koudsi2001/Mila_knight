@@ -5465,7 +5465,7 @@ body:has(.offcanvas) {
 .contact-us-form {
     position: relative;
     padding: 50px;
-    border: 1px solid var(--divider-color);
+    border: 1px solid var(--accent-color);
     border-radius: 30px;
     margin-left: 30px;
 }
@@ -5770,10 +5770,6 @@ body:has(.offcanvas) {
 
     .why-choose-item h3 {
         font-size: 20px;
-    }
-
-    .why-choose-image img {
-        aspect-ratio: 1 / 0.73;
     }
 
     .join-agency {
@@ -6274,10 +6270,6 @@ body:has(.offcanvas) {
 
     .faq-img-1 img {
         max-width: 285px;
-    }
-
-    .faq-img-2 img {
-        aspect-ratio: 1 / 0.9;
     }
 
     .our-faq-section .accordion-header .accordion-button {
@@ -7984,5 +7976,15 @@ html {
     }
     .service-item-body h3 {
         font-size: 14px;
+    }
+    .contact-us-form::before {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    .order-popup .contact-us-form {
+        width: 90%;
     }
 }
