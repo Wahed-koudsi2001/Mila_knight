@@ -2927,7 +2927,7 @@ body:has(.offcanvas) {
     border-radius: 30px;
     height: calc(100% - 30px);
     margin-bottom: 30px;
-    padding: 40px;
+    padding: 20px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: #fff;
@@ -2949,7 +2949,7 @@ body:has(.offcanvas) {
 .mission-vision-image {
     position: relative;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .mission-vision-img img {
@@ -2971,7 +2971,7 @@ body:has(.offcanvas) {
 .mission-vision-content h3 {
     font-size: 22px;
     text-transform: capitalize;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mission-vision-content p {
