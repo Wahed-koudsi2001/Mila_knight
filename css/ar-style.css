@@ -208,7 +208,7 @@
     }
 }
 .page-pricing .box-pricing ul {
-    padding: 40px  25px;
+    padding: 40px 25px;
 }
 .page-pricing .box-pricing ul li::before {
     padding-right: 0;
@@ -267,4 +267,12 @@
 }
 .slicknav_arrow:after {
     right: 80px;
+}
+.testimonial-slider .testimonial-button-next {
+    margin-right: 30px;
+    margin-left: initial;
+}
+.learn-more-circle {
+    margin-right: -20px;
+    margin-left: 0;
 }
