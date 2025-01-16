@@ -2828,7 +2828,7 @@ body:has(.offcanvas) {
 
 .footer-copyright {
     border-top: 1px solid var(--accent-color);
-    padding: 60px 0;
+    padding: 30px 0;
     margin-top: 60px;
     color: #000;
 }
