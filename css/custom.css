@@ -5396,7 +5396,7 @@ body:has(.offcanvas) {
 .contact-info-box .info-box-2 {
     position: relative;
     width: 100%;
-    border: 1px solid var(--divider-color);
+    border: 1px solid var(--accent-color);
     border-radius: 30px;
     padding: 30px 40px;
     overflow: hidden;
@@ -5447,7 +5447,7 @@ body:has(.offcanvas) {
 
 .contact-info-box .info-box-2 .contact-info-item {
     display: flex;
-    text-align: left;
+    align-items: center;
 }
 
 .contact-info-item .icon-box {
@@ -7680,6 +7680,7 @@ body:has(.offcanvas) {
 
     .contact-info-box .info-box-1 .contact-info-item {
         display: flex;
+        align-items: center;
         width: 100%;
     }
 
