@@ -4910,7 +4910,7 @@ body:has(.offcanvas) {
 }
 .page-pricing .row-pricing {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 .page-pricing .box-pricing {
@@ -4943,7 +4943,7 @@ body:has(.offcanvas) {
 .page-pricing .box-pricing ul {
     color: #000;
     list-style: none;
-    padding: 40px 25px;
+    padding: 40px 25px 70px;
 }
 .page-pricing .box-pricing ul li {
     padding-bottom: 30px;
@@ -4952,8 +4952,11 @@ body:has(.offcanvas) {
     font-weight: 600;
     font-size: 18px;
 }
-.page-pricing .box-pricing ul li.active {
+.page-pricing .box-pricing .read-more {
     color: var(--accent-color);
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
 }
 .page-pricing .box-pricing ul li::before {
     content: "\f00c";
@@ -4966,11 +4969,73 @@ body:has(.offcanvas) {
     text-align: center;
     padding: 20px 0;
     display: block;
+    font-weight: 500;
     background-color: var(--accent-color);
     color: #fff;
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+.box-pricing-2 {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #000;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.box-pricing-2 ul {
+    color: #000;
+    list-style: none;
+    padding-bottom: 60px;
+}
+.box-pricing-2 ul li {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+.pricing-header-2 {
+    background-color: #d7e5ec;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 50px 0px;
+    margin-bottom: 40px;
+}
+.box-pricing-2 ul li::before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    color: var(--accent-color);
+    font-weight: 700;
+    padding-right: 20px;
+}
+.box-pricing-2 a {
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    font-weight: 500;
+    background-color: var(--accent-color);
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.notes {
+    padding: 40px 0;
+}
+.notes h4 {
+    color: red;
+    margin-bottom: 20px;
+}
+.notes p {
+    color: #000;
+    margin: 10px 0;
 }
 /************************************/
 /***    28. Testimonial Page css  ***/

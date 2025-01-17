@@ -207,9 +207,6 @@
         margin-left: 0;
     }
 }
-.page-pricing .box-pricing ul {
-    padding: 40px 25px;
-}
 .page-pricing .box-pricing ul li::before {
     padding-right: 0;
     padding-left: 20px;
@@ -275,4 +272,8 @@
 .learn-more-circle {
     margin-right: -20px;
     margin-left: 0;
+}
+.box-pricing-2 ul li::before {
+    padding-right: initial;
+    padding-left: 20px;
 }

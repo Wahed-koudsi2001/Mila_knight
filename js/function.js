@@ -433,4 +433,42 @@
     contactForm.addEventListener('click', function (event) {
         event.stopPropagation(); // Stop the event from bubbling up
     });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // Select all pricing boxes
+        const pricingBoxes = document.querySelectorAll(".box-pricing");
+
+        pricingBoxes.forEach((box) => {
+            const list = box.querySelector("ul"); // Get the <ul> inside the box
+            const items = list.querySelectorAll("li"); // Get all <li> elements in the <ul>
+            const readMoreBtn = box.querySelector(".read-more"); // Get the Read More button
+
+            // Check if there are more than 5 <li> items
+            if (items.length > 5) {
+                // Hide all items beyond the 5th
+                for (let i = 5; i < items.length; i++) {
+                    items[i].style.display = "none";
+                }
+
+                // Add a click event listener to the "Read More" button
+                readMoreBtn.addEventListener("click", function () {
+                    const isExpanded = items[5].style.display === "list-item";
+
+                    // Toggle visibility of extra items
+                    for (let i = 5; i < items.length; i++) {
+                        items[i].style.display = isExpanded ? "none" : "list-item";
+                    }
+
+                    // Change button text
+                    readMoreBtn.textContent = isExpanded ? "اقرأ المزيد" : "اقرأ أقل";
+                });
+            } else {
+                // If there are 5 or fewer items, hide the Read More button
+                readMoreBtn.style.display = "none";
+            }
+        });
+    });
+
+
 })(jQuery);
