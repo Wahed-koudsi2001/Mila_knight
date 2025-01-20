@@ -3638,6 +3638,16 @@ body:has(.offcanvas) {
 .service-feature-image {
     margin-bottom: 40px;
 }
+.service-feature-image video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
 
 .service-feature-image figure {
     display: block;
@@ -7749,47 +7759,48 @@ body:has(.offcanvas) {
     font-weight: bold;
     align-items: center;
     justify-content: center;
-    animation: whatsapp 2s infinite ease-in-out;
-    -webkit-animation: whatsapp 2s infinite ease-in-out;
+    animation: whatsapp 3s infinite ease-in-out;
+    -webkit-animation: whatsapp 3s infinite ease-in-out;
 }
 .whatsapp img {
     width: 25px;
     margin-right: 14px;
 }
 .meeting {
-    bottom: 70px;
-    animation: meeting 3s infinite ease-in-out;
+    right: initial;
+    left: 20px;
     background: linear-gradient(45deg, #006bff 10%, #006bff 50%, #006bff 90%);
-    -webkit-animation: meeting 2s infinite ease-in-out;
+    animation: meeting 3s infinite ease-in-out;
+    -webkit-animation: meeting 3s infinite ease-in-out;
 }
 @keyframes whatsapp {
     0%,
     100% {
         box-shadow: 0 0 5px #25d366;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-    }
-    50% {
         transform: scale(0.9);
-        box-shadow: 0 0 15px #25d366;
         -webkit-transform: scale(0.9);
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
         -o-transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 15px #25d366;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
     }
 }
 
 @-webkit-keyframes whatsapp {
     0%,
     100% {
-        -webkit-transform: scale(1);
+        -webkit-transform: scale(0.9);
         box-shadow: 0 0 5px #25d366;
     }
     50% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1);
         box-shadow: 0 0 15px #25d366;
     }
 }
@@ -7798,30 +7809,30 @@ body:has(.offcanvas) {
     0%,
     100% {
         box-shadow: 0 0 5px #006bff;
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8);
-    }
-    50% {
         transform: scale(0.9);
-        box-shadow: 0 0 15px #006bff;
         -webkit-transform: scale(0.9);
         -moz-transform: scale(0.9);
         -ms-transform: scale(0.9);
         -o-transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1);
+        box-shadow: 0 0 15px #006bff;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
     }
 }
 
 @-webkit-keyframes meeting {
     0%,
     100% {
-        -webkit-transform: scale(1);
+        -webkit-transform: scale(0.9);
         box-shadow: 0 0 5px #006bff;
     }
     50% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1);
         box-shadow: 0 0 15px #006bff;
     }
 }
