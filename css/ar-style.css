@@ -198,15 +198,7 @@
     margin-left: 14px;
     margin-right: 0;
 }
-@media (max-width: 768px) {
-    .whatsapp {
-        width: 55px;
-        height: 55px;
-    }
-    .whatsapp img {
-        margin-left: 0;
-    }
-}
+
 .page-pricing .box-pricing ul li::before {
     padding-right: 0;
     padding-left: 20px;
@@ -276,4 +268,22 @@
 .box-pricing-2 ul li::before {
     padding-right: initial;
     padding-left: 20px;
+}
+.contact-info-box .info-box-1 .contact-info-item::before {
+    right: initial;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .whatsapp {
+        width: 55px;
+        height: 55px;
+    }
+    .whatsapp img {
+        margin-left: 0;
+    }
+    .contact-info-box .info-box-1 .contact-info-item::before {
+        left: initial;
+        right: -50%;
+    }
 }
